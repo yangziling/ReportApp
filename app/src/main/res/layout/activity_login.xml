@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar_login"/>
+
+    <LinearLayout
+        android:background="@drawable/no_background_corner"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/login_user_name"
+            android:hint="管理员账号"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/login_username_delete"
+            android:src="@drawable/icon_delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/no_background_corner"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/login_pass_word"
+            android:hint="密码"
+            android:singleLine="true"
+            android:paddingLeft="20dp"
+            android:background="@null"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/login_pwsd_delete"
+            android:src="@drawable/icon_delete"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/dp100"
+        android:layout_marginRight="@dimen/dp100"
+        android:layout_marginTop="@dimen/dp40"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/login"
+            android:onClick="onClick"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_corner"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+</LinearLayout>
