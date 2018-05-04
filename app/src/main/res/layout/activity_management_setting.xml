@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:background="#dbd8d8"
+        android:gravity="center"
+        android:text="后台管理" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/setting_title"
+        android:layout_marginLeft="@dimen/dp200"
+        android:layout_marginRight="@dimen/dp200"
+        android:layout_marginTop="@dimen/dp60"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp20"
+            android:text="绑定机台"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/dp80"
+            android:layout_height="match_parent">
+            <RadioButton
+                android:id="@+id/yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="是" />
+
+            <RadioButton
+                android:id="@+id/no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="否" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp40"
+        android:layout_below="@id/setting_title"
+        android:layout_marginLeft="@dimen/dp200"
+        android:layout_marginRight="@dimen/dp200"
+        android:layout_marginTop="@dimen/dp150"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp20"
+            android:text="选择机台"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/management_machine_name"
+            android:text="印前-SKN130(海德堡XL150)"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp80"
+            android:layout_width="0dp"
+            android:background="@drawable/black_background_corner"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_below="@id/setting_title"
+        android:layout_marginLeft="@dimen/dp200"
+        android:layout_marginRight="@dimen/dp200"
+        android:layout_marginTop="@dimen/dp230"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/save"
+            android:text="保存"
+            android:background="#474e5e"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dp80"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <include
-        layout="@layout/toolbar_one"/>
+        layout="@layout/toolbar_ordinary"/>
     <TextView
         android:text="历史生产任务列表"
         android:layout_width="wrap_content"
